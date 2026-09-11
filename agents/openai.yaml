@@ -1,0 +1,4 @@
+interface:
+  display_name: "全栈开发协作"
+  short_description: "先调查、再实施、可验证地完成全栈需求"
+  default_prompt: "使用 $dev-skill 完成这个开发需求；先调查和制定方案，优先复用现有实现，数据库和高风险操作按确认门禁处理，完成后验证并用中文总结。"
