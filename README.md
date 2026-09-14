@@ -8,7 +8,7 @@
 
 如果你遇到过“AI 没看现有代码就开始重写”“改一个功能却扩大了范围”“覆盖未提交修改”“未验证就声称完成”，dev-skill 就是为这类全栈协作准备的。
 
-[在线文档](https://dddz-007.github.io/dev-skill/) · [30 秒开始](#30-秒开始) · [完整规则](SKILL.md) · [使用案例](examples/使用案例.md) · [License](LICENSE)
+[在线文档](https://dddz-007.github.io/dev-skill/) · [30 秒开始](#30-秒开始) · [完整规则](SKILL.md) · [使用案例](examples/使用案例.md) · [参与改进](CONTRIBUTING.md) · [License](LICENSE)
 
 ## 30 秒开始
 
@@ -195,6 +195,7 @@ git clone https://github.com/dddz-007/dev-skill.git "$HOME\.agents\skills\dev-sk
 dev-skill/
 ├── SKILL.md                         # Skill 主入口与完整约束
 ├── LICENSE                          # MIT License
+├── CONTRIBUTING.md                  # 参与改进指南
 ├── index.md                         # VitePress 首页
 ├── package.json                     # 文档站依赖与脚本
 ├── .vitepress/                      # VitePress 配置与主题
@@ -217,6 +218,12 @@ pnpm docs:dev
 ~~~
 
 构建静态站点：`pnpm docs:build`。推送到 `master` 后，GitHub Actions 会自动部署到 GitHub Pages。
+
+## 参与改进
+
+欢迎提交真实失败案例、平台兼容问题和工作流建议。请尽量提供原始需求、平台与版本、项目技术栈、Agent 实际与预期行为、相关 Diff / 日志 / 截图，以及是否可以稳定复现。详情见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+如果它帮你减少了一次误改或返工，欢迎点个 Star，并分享你的真实案例。
 
 ## 安全与能力边界
 
