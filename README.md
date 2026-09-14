@@ -195,8 +195,10 @@ git clone https://github.com/dddz-007/dev-skill.git "$HOME\.agents\skills\dev-sk
 dev-skill/
 ├── SKILL.md                         # Skill 主入口与完整约束
 ├── LICENSE                          # MIT License
-├── index.html                       # GitHub Pages 文档入口
-├── .nojekyll                        # 关闭 Jekyll，保证 Markdown 可直接访问
+├── index.md                         # VitePress 首页
+├── package.json                     # 文档站依赖与脚本
+├── .vitepress/                      # VitePress 配置与主题
+├── .github/workflows/deploy.yml     # GitHub Pages 自动部署
 ├── agents/openai.yaml               # Codex 可选界面元数据
 ├── 全栈开发Agent工作流.md             # 可复制的全流程提示词
 ├── examples/
@@ -206,6 +208,15 @@ dev-skill/
     ├── 单点修改.md                   # 单点修改细则
     └── 验证与异常.md                 # 验证与异常恢复
 ~~~
+
+本地预览文档站：
+
+~~~bash
+pnpm install
+pnpm docs:dev
+~~~
+
+构建静态站点：`pnpm docs:build`。推送到 `master` 后，GitHub Actions 会自动部署到 GitHub Pages。
 
 ## 安全与能力边界
 

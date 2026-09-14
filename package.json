@@ -1,0 +1,18 @@
+{
+  "name": "dev-skill",
+  "private": true,
+  "type": "module",
+  "description": "通用全栈开发 Agent Skill 文档站",
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
